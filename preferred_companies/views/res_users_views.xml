@@ -8,9 +8,9 @@
         <field name="signature" position="after">
             <field name="company_ids" invisible="1" />
             <group name="preferred_companies" string="Preferred companies">
-                <field name="preferred_company_ids" 
-                    widget="many2many_tags" 
-                    options="{'no_create': True, 'no_open': True}" 
+                <field name="preferred_company_ids"
+                    widget="many2many_tags"
+                    options="{'no_create': True, 'no_open': True}"
                     domain="[('id', 'in', company_ids)]"
                 />
             </group>
