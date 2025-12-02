@@ -7,17 +7,17 @@
         User Company Preferences
         ========================
 
-        This module allows users to define their preferred companies among their allowed companies.
+        Features
+        --------
 
-        Features:
-        ---------
         * Users can select multiple preferred companies from their allowed companies
         * Preferred companies are automatically selected when the user logs in
         * Simple configuration through user preferences
         * Multi-company environment support
 
-        Usage:
-        ------
+        Usage
+        -----
+
         1. Go to user preferences/settings
         2. Select your preferred companies from the list of allowed companies
         3. Save your preferences
