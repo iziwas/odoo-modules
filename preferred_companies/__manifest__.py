@@ -25,7 +25,7 @@
     "icon": "/preferred_companies/static/description/icon.png",
     "images": [
         "/preferred_companies/static/description/icon.png",
-        "/preferred_companies/static/description/banner.svg",
+        "/preferred_companies/static/description/banner.png",
     ],
     "depends": ["base", "web"],
     "data": ["views/res_users_views.xml"],
