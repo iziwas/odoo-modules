@@ -23,6 +23,10 @@
     "author": "Iziwas",
     "license": "LGPL-3",
     "icon": "/preferred_companies/static/description/icon.png",
+    "images": [
+        "/preferred_companies/static/description/icon.png",
+        "/preferred_companies/static/description/banner.svg",
+    ],
     "depends": ["base", "web"],
     "data": ["views/res_users_views.xml"],
     "assets": {
