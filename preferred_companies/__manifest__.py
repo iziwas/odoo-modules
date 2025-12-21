@@ -5,10 +5,8 @@
     "summary": "Automatically select preferred companies on login",
     "description": """
         User Company Preferences
-        ========================
 
         Features
-        --------
 
         * Users can select multiple preferred companies from their allowed companies
         * Preferred companies are automatically selected when the user logs in
@@ -16,7 +14,6 @@
         * Multi-company environment support
 
         Usage
-        -----
 
         1. Go to user preferences/settings
         2. Select your preferred companies from the list of allowed companies
@@ -25,6 +22,7 @@
     """,
     "author": "Iziwas",
     "license": "LGPL-3",
+    "icon": "/preferred_companies/static/description/icon.png",
     "depends": ["base", "web"],
     "data": ["views/res_users_views.xml"],
     "assets": {
