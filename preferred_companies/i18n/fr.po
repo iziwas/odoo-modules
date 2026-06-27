@@ -1,0 +1,42 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* preferred_companies
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-06-27 00:00+0000\n"
+"Last-Translator: Iziwas\n"
+"Language-Team: French <fr@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: preferred_companies
+#: model:ir.module.module,shortdesc:preferred_companies.module_preferred_companies
+msgid "User Company Preferences"
+msgstr "Préférences de sociétés utilisateur"
+
+#. module: preferred_companies
+#: model:ir.module.module,summary:preferred_companies.module_preferred_companies
+msgid "Automatically select preferred companies on login"
+msgstr "Sélectionner automatiquement les sociétés préférentielles à la connexion"
+
+#. module: preferred_companies
+#: model:ir.model.fields,field_description:preferred_companies.field_res_users__preferred_company_ids
+msgid "Preferred companies"
+msgstr "Sociétés préférentielles"
+
+#. module: preferred_companies
+#: model_terms:ir.ui.view,arch_db:preferred_companies.res_users_simple_modif_view_form
+msgid "Preferred companies"
+msgstr "Sociétés préférentielles"
+
+#. module: preferred_companies
+#: code:addons/preferred_companies/models/res_users.py:0
+#, python-format
+msgid "Preferred companies must be among the user's allowed companies."
+msgstr "Les sociétés préférentielles doivent faire partie des sociétés autorisées de l'utilisateur."
