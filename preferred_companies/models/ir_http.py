@@ -10,8 +10,9 @@ class IrHttp(models.AbstractModel):
         """Override to add preferred_companies in session_info method"""
         result = super().session_info()
 
-        result["user_companies"].update(
-            {"preferred_companies": self.env.user.preferred_company_ids.ids}
-        )
+        if "user_companies" in result:
+            result["user_companies"]["preferred_companies"] = (
+                self.env.user.preferred_company_ids.ids
+            )
 
         return result
