@@ -1,0 +1,99 @@
+// Boutons Save / Discard — formulaires Odoo 17
+// En Odoo 17, les boutons d'édition sont peu visibles par défaut.
+// Ce fichier les rend plus intuitifs : Save en vert, Discard en contour rouge.
+
+// Boutons principaux (panneau de contrôle, en haut de formulaire)
+
+.o_form_buttons_edit {
+    gap: 0.5rem;
+
+    // Bouton "Enregistrer" (Save) — vert, bien visible
+    .o_form_button_save {
+        background-color: $o-success !important;
+        border-color: $o-success !important;
+        color: #fff !important;
+        font-weight: 600;
+
+        &:hover,
+        &:focus {
+            background-color: darken($o-success, 7.5%) !important;
+            border-color: darken($o-success, 10%) !important;
+        }
+    }
+
+    // Bouton "Annuler" (Discard/Cancel) — contour rouge, sans fond
+    .o_form_button_cancel {
+        background-color: transparent !important;
+        border-color: $o-danger !important;
+        color: $o-danger !important;
+        font-weight: 600;
+
+        &:hover,
+        &:focus {
+            background-color: $o-danger !important;
+            color: #fff !important;
+        }
+    }
+}
+
+// Roue crantée — menu Actions (CogMenu)
+// Par défaut : simple icône sans fond ni bordure, difficile à repérer.
+// On lui donne l'apparence d'un vrai bouton avec une couleur neutre et un hover visible.
+
+.o_cp_action_menus {
+    .btn {
+        //border: 1px solid #6c757d !important;
+        border-radius: 0.25rem;
+        padding: 0.2rem 0.5rem !important;
+        color: #6c757d !important;
+        //line-height: 1.4;
+        transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+
+        &:hover,
+        &:focus {
+            background-color: #6c757d !important;
+            color: #fff !important;
+        }
+
+        .fa-cog {
+            font-size: 1rem;
+        }
+    }
+}
+
+// Boutons d'état (status indicator dans la barre de navigation)
+// Ces petits boutons icône sont pratiquement invisibles par défaut.
+
+.o_form_status_indicator_buttons {
+    gap: 0.25rem;
+
+    // Bouton "Save" (nuage) — vert
+    .o_form_button_save {
+        background-color: transparent !important;
+        border-color: $o-success !important;
+        color: $o-success !important;
+        padding: 0.2rem 0.6rem !important;
+        border-radius: 0.25rem;
+
+        &:hover,
+        &:focus {
+            background-color: darken($o-success, 7.5%) !important;
+            color: #fff !important;
+        }
+    }
+
+    // Bouton "Discard" (flèche retour) — contour rouge
+    .o_form_button_cancel {
+        background-color: transparent !important;
+        border-color: $o-danger !important;
+        color: $o-danger !important;
+        padding: 0.2rem 0.6rem !important;
+        border-radius: 0.25rem;
+
+        &:hover,
+        &:focus {
+            background-color: $o-danger !important;
+            color: #fff !important;
+        }
+    }
+}
