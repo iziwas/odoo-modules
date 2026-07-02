@@ -9,28 +9,28 @@
 
     // Bouton "Enregistrer" (Save) — vert, bien visible
     .o_form_button_save {
-        background-color: #28a745 !important;
-        border-color: #28a745 !important;
+        background-color: $o-success !important;
+        border-color: $o-success !important;
         color: #fff !important;
         font-weight: 600;
 
         &:hover,
         &:focus {
-            background-color: #218838 !important;
-            border-color: #1e7e34 !important;
+            background-color: darken($o-success, 7.5%) !important;
+            border-color: darken($o-success, 10%) !important;
         }
     }
 
     // Bouton "Annuler" (Discard/Cancel) — contour rouge, sans fond
     .o_form_button_cancel {
         background-color: transparent !important;
-        border-color: #dc3545 !important;
-        color: #dc3545 !important;
+        border-color: $o-danger !important;
+        color: $o-danger !important;
         font-weight: 600;
 
         &:hover,
         &:focus {
-            background-color: #dc3545 !important;
+            background-color: $o-danger !important;
             color: #fff !important;
         }
     }
@@ -70,14 +70,14 @@
     // Bouton "Save" (nuage) — vert
     .o_form_button_save {
         background-color: transparent !important;
-        border-color: #28a745 !important;
-        color: #28a745 !important;
+        border-color: $o-success !important;
+        color: $o-success !important;
         padding: 0.2rem 0.6rem !important;
         border-radius: 0.25rem;
 
         &:hover,
         &:focus {
-            background-color: #218838 !important;
+            background-color: darken($o-success, 7.5%) !important;
             color: #fff !important;
         }
     }
@@ -85,14 +85,14 @@
     // Bouton "Discard" (flèche retour) — contour rouge
     .o_form_button_cancel {
         background-color: transparent !important;
-        border-color: #dc3545 !important;
-        color: #dc3545 !important;
+        border-color: $o-danger !important;
+        color: $o-danger !important;
         padding: 0.2rem 0.6rem !important;
         border-radius: 0.25rem;
 
         &:hover,
         &:focus {
-            background-color: #dc3545 !important;
+            background-color: $o-danger !important;
             color: #fff !important;
         }
     }

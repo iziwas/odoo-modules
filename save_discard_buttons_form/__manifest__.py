@@ -1,7 +1,8 @@
 {
     "name": "save_discard_buttons_form",
     "summary": """ Override Save / Discard buttons aesthetics in forms """,
-    "licence": "AGPL-3",
+    "author": "Iziwas",
+    "license": "AGPL-3",
     "category": "Extra Tools",
     "version": "17.0.0.0",
     "depends": [
@@ -14,5 +15,5 @@
         ]
     },
     "installable": True,
-    "application": True,
+    "application": False,
 }
