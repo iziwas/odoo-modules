@@ -3,9 +3,10 @@
     "summary": """ Override Save / Discard buttons aesthetics in forms """,
     "website": "https://couriat.info",
     "author": "Iziwas",
+    "maintainer": "Iziwas",
     "license": "AGPL-3",
     "category": "Extra Tools",
-    "version": "17.0.0.0",
+    "version": "17.0.1.0.1",
     "depends": [
         "web"
     ],
