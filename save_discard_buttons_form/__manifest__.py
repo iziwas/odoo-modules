@@ -2,9 +2,10 @@
     "name": "save_discard_buttons_form",
     "summary": """ Override Save / Discard buttons aesthetics in forms """,
     "author": "Iziwas",
+    "maintainer": "Iziwas",
     "license": "AGPL-3",
     "category": "Extra Tools",
-    "version": "17.0.0.0",
+    "version": "17.0.1.0.1",
     "depends": [
         "web"
     ],
