@@ -14,26 +14,33 @@
 </head>
 <body>
     <h1>User Company Preferences</h1>
-    <p>Automatically select preferred companies on login</p>
+    <p>
+        Allow users to define a set of preferred companies that are automatically
+        activated each time they log in, without having to reselect them manually
+        after each session.
+    </p>
     
     <h2>Features</h2>
     <ul>
-        <li>Users can select multiple preferred companies from their allowed companies</li>
-        <li>Preferred companies are automatically selected when the user logs in</li>
-        <li>Simple configuration through user preferences</li>
-        <li>Multi-company environment support</li>
+        <li>Users choose their preferred companies from their list of allowed companies</li>
+        <li>Preferred companies are automatically activated on login (when no active session is detected)</li>
+        <li>The user's default company is always placed first so it appears as the primary company in the interface</li>
+        <li>Preferred companies are automatically cleaned up when company access is revoked by an administrator</li>
+        <li>Server-side validation prevents selecting companies outside the user's allowed scope</li>
     </ul>
-    
-    <h2>Usage</h2>
+
+    <h2>Configuration</h2>
     <ol>
-        <li>Go to user preferences/settings</li>
-        <li>Select your preferred companies from the list of allowed companies</li>
-        <li>Save your preferences</li>
-        <li>On next login, your preferred companies will be automatically selected</li>
+        <li>Go to **Settings → Users & Companies → Users**</li>
+        <li>Open a user form and navigate to the **Preferences** tab</li>
+        <li>Select one or more **Preferred companies** from the list of allowed companies</li>
+        <li>Save. On next login, those companies will be automatically activated.</li>
     </ol>
-    
-    <p><strong>Author:</strong> Iziwas</p>
-    <p><strong>Version:</strong> 17.0.1.0.0</p>
-    <p><strong>License:</strong> LGPL-3</p>
+
+    <h2>Notes</h2>
+    <ul>
+        <li>Preferred companies are only applied when no company selection is already stored in the current session (URL hash or browser cookie).</li>
+        <li>If the user's default company (``company_id``) is among the preferred companies, it is placed first in the active company list.</li>
+    </ul>
 </body>
 </html>
