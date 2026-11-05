@@ -16,7 +16,7 @@ Dans une base multi-sociétés, chaque utilisateur choisit les sociétés à act
 - Si un administrateur retire l'accès à une société, celle-ci disparaît des sociétés préférées.
 - Une sélection déjà présente dans la session (URL ou cookie) reste prioritaire.
 
-**Configuration :** ouvrir son profil depuis le menu utilisateur (avatar en haut à droite), puis renseigner le champ **Sociétés préférentielles**. Le choix s'applique à la connexion suivante.
+**Configuration :** cliquer sur son avatar en haut à droite, ouvrir **Préférences**, puis renseigner le champ **Sociétés préférentielles**. Le choix s'applique à la connexion suivante.
 
 ## save_discard_buttons_form
 
