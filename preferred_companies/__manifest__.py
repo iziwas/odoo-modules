@@ -1,6 +1,6 @@
 {
     "name": "User Company Preferences",
-    "version": "17.0.1.2.0",
+    "version": "17.0.1.2.1",
     "category": "Technical",
     "summary": "Restore the user's preferred companies automatically on login",
     "description": """
@@ -27,10 +27,9 @@ Features
 Configuration
 -------------
 
-1. Go to **Settings → Users & Companies → Users**
-2. Open a user form and navigate to the **Preferences** tab
-3. Select one or more **Preferred companies** from the list of allowed companies
-4. Save. On next login, those companies will be automatically activated.
+1. Click your avatar in the top right corner and open **Preferences**
+2. Select one or more **Preferred companies** from the list of allowed companies
+3. Save. On next login, those companies will be automatically activated.
 
 Notes
 -----
