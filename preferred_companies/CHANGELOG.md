@@ -9,6 +9,19 @@ Version format follows the Odoo convention: `{odoo_series}.{major}.{minor}.{patc
 
 ---
 
+## [17.0.1.2.1] - 2026-11-05
+
+### Fixed
+- Non-admin users can now save their own preferred companies: the field was
+  missing from `SELF_WRITEABLE_FIELDS`, which raised an `AccessError`
+- Documentation: the field is set from the user's **Preferences**, not from
+  the user form in the settings
+
+### Added
+- Tests for the access rights and validation of preferred companies
+
+---
+
 ## [17.0.1.2.0] - 2026-06-27
 
 ### Added

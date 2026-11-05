@@ -13,6 +13,10 @@ class ResUsers(models.Model):
         string="Preferred companies",
     )
 
+    @property
+    def SELF_WRITEABLE_FIELDS(self):
+        return super().SELF_WRITEABLE_FIELDS + ["preferred_company_ids"]
+
     def _get_preferred_companies(self):
         return self.preferred_company_ids.ids
 
